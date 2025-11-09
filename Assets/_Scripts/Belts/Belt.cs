@@ -82,7 +82,7 @@ public class Belt : MonoBehaviour
 
     private bool OnLoopCompleted(Belt beltInSequence)
     {
-        //Check if the item has finish a loop by see if it each the final belt
+        //Check if the item has finish a loop by see if it reach the final belt
         if (beltInSequence.gameObject.name == "Belt: 4")
         {
             return true;

@@ -43,13 +43,11 @@ public class PlayerInputManager : MonoBehaviour
            
             if (hit.transform.GetComponent<BeltItem>()!= null)  // i will change this later
             {
-                // Put the itemon thee convey belt  
+                // Put the item on thee convey belt  
                 if (hit.transform.GetComponent<BeltItem>()?.IsInConveybelt() == false)
                 {
                     firstBelt.AddItemToBelt(GetPressedItem(hit));
                 }
-              
-
             }
         }
         
